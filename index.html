@@ -337,13 +337,13 @@
   function buildTips(res, bits, len){
     if(res.pass){
       const praise = [];
-      if(len>=16) praise.push("Nice—long passphrase!");
+      if(len>=16) praise.push("Nice long passphrase!");
       if(bits>=60) praise.push("Great strength score.");
       praise.push(...[
         "Locked down. Proud of you.",
-        "Strong work—this is solid.",
+        "Strong work! This is solid.",
         "Beast mode. Nicely done.",
-        "Great job—this is hard to guess."
+        "Great job! This is hard to guess."
       ]);
       return praise.slice(0,3);
     }
@@ -548,4 +548,5 @@
 </script>
 </body>
 </html>
+
 
